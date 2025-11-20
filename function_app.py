@@ -24,6 +24,6 @@ def predict(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(f"Hello, The probability that this customer will churn is {prediction}")
     else:
         return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass tenure, monthly, techsupport to get a prediction."
+             "This HTTP triggered function executed successfully. Pass tenure, monthly, techsupport to get a prediction.",
              status_code = 200
         )
